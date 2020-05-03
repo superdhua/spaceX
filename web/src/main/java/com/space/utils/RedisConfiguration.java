@@ -18,7 +18,6 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 @Configuration
 public class RedisConfiguration {

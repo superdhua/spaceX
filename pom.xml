@@ -91,6 +91,12 @@
 <!--            <groupId>redis.clients</groupId>-->
 <!--            <artifactId>jedis</artifactId>-->
 <!--        </dependency>-->
+<!--    orcle jdbc-->
+        <dependency>
+            <groupId>oracle.jdbc</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>6.0</version>
+        </dependency>
         <dependency>
             <groupId>io.lettuce</groupId>
             <artifactId>lettuce-core</artifactId>

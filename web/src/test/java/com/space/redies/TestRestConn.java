@@ -1,7 +1,9 @@
 package com.space.redies;
 
 import org.junit.Test;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.connection.RedisClusterConnection;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
 
 
 public class TestRestConn {
@@ -13,18 +15,22 @@ public class TestRestConn {
 //
 //    @Autowired
 //    private JedisCluster jedisCluster;
-//
+    @Autowired
+    private RedisConnectionFactory rcf;
+
 //    @PostConstruct
 //    public void init(){
 //        stringRedes = redisTemplate.opsForValue();
 //    }
 //
-//    @Test
-//    public void testString(){
+    @Test
+    public void testString(){
 //        jedisCluster.set("name","success");
 //        jedisCluster.set("isok?","ok");
 //        String ok = jedisCluster.get("isok?");
 //        System.out.println("isOk?=="+ok);
-//    }
+        RedisClusterConnection rcc =  rcf.getClusterConnection();
+
+    }
 
 }
